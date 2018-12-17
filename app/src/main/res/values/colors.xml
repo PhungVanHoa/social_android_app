@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="dark_black">#1D1F2D</color>
+    <color name="dark_black_alpha50">#50261218</color>
+    <color name="white">#d6d4d4</color>
+    <color name="white_alpha50">#50d6d4d4</color>
+    <color name="dark_alpha50">#50d6d4d4</color>
+    <color name="green_alpha50">#ffffff</color>
+    <color name="light_blue">#35B6E5</color>
+
+
+    <color name="dark_purple">#261218</color>
+    <color name="dark_brown">#282123</color>
+    <color name="status_bar">#493f42</color>
+    <color name="dark_status_bar">#1D191A</color>
+    <color name="colorPrimary">#5D5154</color>
+    <color name="dark_white">#E8E4D9</color>
+    <color name="tab_color">#877E77</color>
+    <color name="yellow">#EAB662</color>
+    <color name="dark_pink">#BA6E65</color>
+
+
+    <!--Reading dialog colors-->
+    <color name="reading_dialog_1">#A19095</color>
+    <color name="reading_dialog_2">#77686C</color>
+    <color name="reading_dialog_3">#493F42</color>
+    <color name="reading_dialog_4">#231A1C</color>
+    <color name="reading_dialog_5">#261218</color>
+    <color name="chat_text_color">@color/status_bar</color>
+
+    <!--Write prayer dialog-->
+    <color name="write_dialog_btn_icon">@color/light_blue</color>
+    <color name="write_dialog_btn_text">@color/white</color>
+    <color name="reading_dialog_main_btn_color">@color/reading_dialog_3</color>
+    <color name="reading_dialog_background">#292425</color>
+</resources>

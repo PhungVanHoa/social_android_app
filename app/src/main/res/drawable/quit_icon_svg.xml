@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="90dp"
+    android:height="90dp"
+    android:viewportWidth="90"
+    android:viewportHeight="90">
+  <path
+      android:fillColor="@color/write_dialog_btn_icon"
+      android:pathData="M55.69,45 L87.74,77.06a7.45,7.45 0,0 1,0 10.69h0a7.45,7.45 0,0 1,-10.69 0L45,55.69 12.94,87.74a7.45,7.45 0,0 1,-10.69 0,7.45 7.45,0 0,1 0,-10.69L34.31,45 2.26,12.94a7.45,7.45 0,0 1,0 -10.69,7.45 7.45,0 0,1 10.69,0L45,34.31 77.06,2.26a7.45,7.45 0,0 1,10.69 0,7.45 7.45,0 0,1 0,10.69L55.69,45Z"/>
+</vector>

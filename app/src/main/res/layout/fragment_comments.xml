@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/read_comments_prayers_dialog_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/dialog_chat_input_background" />
+
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/reading_dialog_mayor_padding"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/comment_dialog_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/reading_dialog_minor_padding"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/yellow"
+            android:src="@drawable/return_from_comment_icon_svg" />
+
+        <EditText
+            android:id="@+id/comment_dialog_input_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/reading_dialog_minor_padding"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_chat_input_background"
+            android:hint="@string/write_comment"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:padding="@dimen/reading_dialog_minor_padding"
+            android:textColor="@color/status_bar"
+            android:textColorHint="@color/tab_color"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/comment_dialog_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/reading_dialog_minor_padding"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/yellow"
+            android:src="@drawable/send_comment_icon_svg" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp"
+    android:id="@+id/comments_parent_layout_view"
+    android:padding="@dimen/reading_dialog_mayor_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/comment_name_text_view"
+            fontPath="fonts/Lustria-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="example"
+            android:textColor="@color/chat_text_color"
+            android:textSize="@dimen/comments_name_date_size"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/comment_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="example"
+            android:textColor="@color/chat_text_color"
+            android:textSize="@dimen/comments_name_date_size"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_black_alpha50" />
+
+    <TextView
+        android:id="@+id/comment_text_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="example"
+        android:textColor="@color/chat_text_color"
+        android:textSize="@dimen/comments_text_size"
+        tools:ignore="MissingPrefix" />
+
+</LinearLayout>

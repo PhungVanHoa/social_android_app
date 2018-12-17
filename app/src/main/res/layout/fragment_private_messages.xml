@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_white">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.bottomappbar.BottomAppBar
+        android:id="@+id/personal_messages_bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/tab_color"
+        android:elevation="10dp"
+        android:fadingEdgeLength="4dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:fadingEdgeLength="4dp"
+        android:src="@drawable/send_message_bottom_bar"
+        app:elevation="8dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/personal_messages_bottom_app_bar"
+        app:rippleColor="@color/light_blue"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,4 @@
+<vector android:height="24dp" android:viewportHeight="69.99"
+    android:viewportWidth="77.98" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/write_dialog_btn_icon" android:pathData="M78,34.84a3,3 0,0 0,-1.78 -2.59l-72,-32A3,3 0,0 0,0.32 4.34L15.66,35 0.32,65.65a3,3 0,0 0,3.88 4.09l72,-32A3,3 0,0 0,78 34.84ZM67.57,35 L9.41,60.84l12.25,-24.5c0.89,-1.1 1.56,-2.13 0,-2.69L9.41,9.15 67.57,35Z"/>
+</vector>

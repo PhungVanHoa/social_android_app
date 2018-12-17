@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Molitvena Bilježnica</string>
+    <string name="main_fonts">fonts/Lustria-Regular.ttf</string>
+    <string name="dnevne">DNEVNE</string>
+    <string name="mjesecne">MJESEČNE</string>
+    <string name="godisnje">GODIŠNJE</string>
+    <string name="naslov_molitve">Naslov molitve</string>
+    <string name="text">Tekst</string>
+    <string name="votes">Votes</string>
+    <string name="date">Date</string>
+    <string name="no_prayer_warning">Upišite molitvu.</string>
+    <string name="username_warning">Korisničko ime mora imati više od 4 slova</string>
+    <string name="prayer_added_to_favorites">Dodana u molitvenu listu</string>
+    <string name="name_taken_warning">Ime je zauzeto</string>
+    <string name="prayer_removed_from_favorites">Molitva maknuta iz molitvene liste</string>
+    <string name="write_comment">Upiši komentar</string>
+    <string name="comment_indicator">Komentiraj</string>
+    <string name="chat_message_warning">Tekst poruke treba biti duži.</string>
+    <string name="privatna_molitva">Ne želim da drugi korisnici vide ovu molitvu</string>
+    <string name="post_prayer_btn">POŠALJI</string>
+    <string name="quit_posting_prayer_btn">ODUSTANI</string>
+    <string name="warning_dialog_understood_btn">U redu</string>
+    <string name="warning_dialog_private_prayer_title">Napomena</string>
+    <string name="warning_dialog_private_prayer_text">Vaša molitva se nalazi u osobnim molitvama i samo je vama vidljiva</string>
+    <string name="deleting_prayer_positive_btn">Izbriši</string>
+    <string name="deleting_prayer_negative_btn">Odustani</string>
+    <string name="deleting_prayer_dialog_title">Želite izbrisati molitvu!</string>
+    <string name="deleting_prayer_dialog_message">Potvrdite ukoliko zaista želite izbrisati ovu molitvu iz aplikacije.</string>
+    <string name="year_ref">god</string>
+    <string name="month_ref">m</string>
+    <string name="day_ref">d</string>
+    <string name="hour_ref">h</string>
+    <string name="minute_ref">min</string>
+    <string name="sec_ref">sec</string>
+</resources>

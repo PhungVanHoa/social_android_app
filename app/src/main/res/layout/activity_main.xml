@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_white"
+        android:orientation="vertical"
+        tools:context=".view.MainActivity">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tab_color"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/navigation" />
+
+        <LinearLayout
+            android:id="@+id/subnavigator_tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/tab_color"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fragment_daily_view"
+                fontPath="@string/main_fonts"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="DNEVNE"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/fragment_monthly_view"
+                fontPath="@string/main_fonts"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="MJESEČNE"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/fragment_yearly_view"
+                fontPath="@string/main_fonts"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="GODIŠNJE"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/subnavigator_search_view"
+            fontPath="fonts/Lustria-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/status_bar"
+            android:drawableLeft="@drawable/search_icon_svg"
+            android:hint="Pretraži"
+            android:textColor="@color/status_bar"
+            android:textColorHint="@color/tab_color"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/new_prayer_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingPrefix"
+            tools:layout_editor_absoluteY="375dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/top_sec_navbar_shadow_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/activity_main_fragment_container" />
+            <FrameLayout
+                android:id="@+id/activity_main_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@drawable/bottom_navbar_shadow_view"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_main_fragment_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageButton
+                    android:id="@+id/private_messages_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@color/status_bar"
+                    android:src="@drawable/messages_icon_svg"
+                    android:tint="@color/status_bar" />
+
+                <ImageButton
+                    android:id="@+id/search_prayer_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/search_icon_svg"
+                    android:tint="@color/status_bar" />
+
+                <ImageButton
+                    android:id="@+id/new_prayer_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/add_icon_svg"
+                    android:tint="@color/status_bar" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+    <!--Used for private message management-->
+    <FrameLayout
+        android:id="@+id/private_messages_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp" />
+</RelativeLayout>
